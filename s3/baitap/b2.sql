@@ -50,7 +50,7 @@ SELECT `customer`.cId,`customer`.name
 FROM customer
 WHERE NOT EXISTS (SELECT `order`.cId FROM `order` WHERE `order`.cId = `customer`.cid);
 
-select `order_detail`.oid,`order`.odate,sum(`order_detail`.odQty*`product`.pPrice)
+select `order_detail`.oid,`order`.odate,(sum(`order_detail`.odQty*`product`.pPrice))as oTotalPrice
 from
  `order` inner join `order_detail` on `order_detail`.oid=`order`.oid
 inner join `product` on `product`.pId=`order_detail`.pid
