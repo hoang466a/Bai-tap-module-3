@@ -27,9 +27,63 @@ set productcode=10,productprice=100
 where productname="cloha";
 delete from products_view where productname="cloha";
 
-DELIMITER//
+DELIMITER //
 create procedure `show_information`()
 begin
-select * from products
+select * from products;
 end//
-DELIMITER;
+DELIMITER ;
+call show_information;
+
+DELIMITER //
+create procedure `add_new_product`(in Id int,
+productCode int,
+productName varchar(50),
+productPrice int,
+productAmount int,
+productDescription varchar(50),
+productStatus bit)
+begin
+insert into products
+value(Id,
+productCode,
+productName,
+productPrice,
+productAmount,
+productDescription,
+productStatus);
+end //
+DELIMITER ;
+call `add_new_product`(15,11,'acv',15,17,'asloha23',1);
+
+DELIMITER //
+create procedure `update_product`(in
+fixId int,
+productCodeFix int,
+productNameFix varchar(50),
+productPriceFix int,
+productAmountFix int,
+productDescriptionFix varchar(50),
+productStatusFix bit)
+begin
+SET SQL_SAFE_UPDATES = 0;
+update products
+set 
+productCode=productCodeFix,
+productName=productNameFix,
+productPrice=productPriceFix,
+productAmount=productAmountFix,
+productDescription=productDescriptionFix,
+productStatus=productStatusFix
+where Id=FixId;
+end //
+DELIMITER ;
+call `update_product`(10,14,'fix demo',1,7,'fix demo',1);
+
+DELIMITER //
+create procedure `delete_product`(in ID_delete int)
+begin 
+delete from products where Id=Id_delete;
+end //
+DELIMITER ;
+call `delete_product`(5);
