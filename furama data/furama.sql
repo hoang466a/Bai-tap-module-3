@@ -92,6 +92,18 @@ foreign key (ma_kieu_thue) references kieu_thue(ma_kieu_thue),
 foreign key (ma_loai_dich_vu) references loai_dich_vu(ma_loai_dich_vu)
 );
 
+create table hop_dong(
+ma_hop_dong int primary key not null auto_increment,
+ngay_lam_hop_dong datetime not null,
+tien_dat_coc double not null,
+ma_nhan_vien int,
+ma_khach_hang int,
+ma_dich_vu int,
+foreign key(ma_nhan_vien) references nhan_vien(ma_nhan_vien),
+foreign key(ma_khach_hang) references khach_hang(ma_khach_hang),
+foreign key(ma_dich_vu) references dich_vu(ma_dich_vu)
+);
+
 
 
 
