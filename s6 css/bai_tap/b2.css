@@ -1,0 +1,30 @@
+p{
+    width: 45%;
+}
+h1{
+    font-weight: 600;
+}
+
+hr{
+    width: 40%;
+    color:red;
+    margin-left:0;
+    margin: 0px;
+}
+
+.part{
+    text-indent: 30px;
+}
+
+.national{
+    font-weight: 800;
+}
+
+.national1{
+    color:#00FFFF;
+}
+
+.national2{
+    color:#0000FF;
+
+}
