@@ -1,5 +1,16 @@
-.header{
-    display: flex;
-    list-style-type: none;
-    padding:30px;
+header{
+    display: inline;
+    box-sizing: border-box;
+
+}
+
+.leftside{
+    width: 50%;
+}
+
+.midside{
+    width: 40%;
+}
+.rightside{
+    width: 30%;
 }
