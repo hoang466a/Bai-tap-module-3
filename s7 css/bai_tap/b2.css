@@ -1,6 +1,20 @@
 header{
-    display: inline;
     box-sizing: border-box;
+    margin-right: 10%;
+    background-color: #3b5998;
+}
+
+.icon {
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+    background-color: white;
+  }
+
+.grid-container{
+display: grid;
+grid-template-columns: auto auto auto auto auto auto auto auto auto  auto auto auto auto auto;
+text-align: center;
 
 }
 
