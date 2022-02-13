@@ -1,6 +1,6 @@
 header{
     box-sizing: border-box;
-    margin-right: 10%;
+    margin-right: 0%;
     background-color: #3b5998;
 }
 
@@ -18,13 +18,3 @@ text-align: center;
 
 }
 
-.leftside{
-    width: 50%;
-}
-
-.midside{
-    width: 40%;
-}
-.rightside{
-    width: 30%;
-}
