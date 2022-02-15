@@ -5,112 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c88d3c2-a43a-4f5a-8963-e5caca956199" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../server-time/src/main/java/ServerTimeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/7.1/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/7.1/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/7.1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java-web-currency-converter/src/main/java/ConverterServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TranslationServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple_login/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple_login/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple_login/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple_login/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple_login/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple_login/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple_login/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../simple_login/src/main/java/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aloha/New Text Document.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/build/classes/java/main/ServerTimeServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/build/libs/server_time-1.0-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/build/tmp/war/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/src/main/java/ServerTimeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server_time/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,7 +137,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1644832262382</updated>
-      <workItem from="1644832270172" duration="478000" />
+      <workItem from="1644832270172" duration="851000" />
+      <workItem from="1644897866115" duration="318000" />
     </task>
     <servers />
   </component>
@@ -258,5 +155,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
