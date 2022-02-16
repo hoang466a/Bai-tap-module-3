@@ -46,4 +46,14 @@ public class Customer {
     public void setImg(String img) {
         this.img = img;
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "name='" + name + '\'' +
+                ", date='" + date + '\'' +
+                ", address='" + address + '\'' +
+                ", img='" + img + '\'' +
+                '}';
+    }
 }
