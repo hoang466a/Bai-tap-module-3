@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ProductServiceImpl implements ProductServive {
+public class ProductServiceImpl implements ProductService {
     private static Map<Integer,Product>products;
     static{
         products=new HashMap<>();
@@ -23,8 +23,10 @@ public class ProductServiceImpl implements ProductServive {
         return new ArrayList<Product>(products.values());
     }
 
+
+
     @Override
-    public void create(Product product) {
+    public void save(Product product) {
         products.put(product.getId(),product);
     }
 

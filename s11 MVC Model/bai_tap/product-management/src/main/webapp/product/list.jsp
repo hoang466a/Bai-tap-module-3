@@ -23,14 +23,18 @@
         <td>Price</td>
         <td>Information</td>
         <td>Producer</td>
+        <td>Edit</td>
+        <td>Delete</td>
     </tr>
     <c:forEach items='${requestScope["products"]}' var="product">
         <tr>
             <td><a href="/products?action=view&id=${product.getId()}">${product.getId()}</a></td>
             <td>${product.getNameProduct()}</td>
             <td>${product.getPriceProduct()}</td>
+            <td>${product.getInformation()}</td>
+            <td>${product.getProducer()}</td>
             <td><a href="/products?action=edit&id=${product.getId()}">edit</a></td>
-            <td><a href="/products?action=delete&id=${customer.getId()}">delete</a></td>
+            <td><a href="/products?action=delete&id=${product.getId()}">delete</a></td>
         </tr>
     </c:forEach>
 </table>
