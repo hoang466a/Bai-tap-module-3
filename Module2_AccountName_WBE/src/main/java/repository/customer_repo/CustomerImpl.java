@@ -16,20 +16,18 @@ public class CustomerImpl implements ICustomerImpl {
     private Connection connection;
 
 
-    public CustomerImpl(){
-
-    }
-
-    public BaseRepository(){
-        Connection connection=null;
-        try{
+    public CustomerImpl() {
+        try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            this.connection= DriverManager.getConnection(jdbcURL,jdbcUsername,jdbcPassword);
-        } catch (SQLException | ClassNotFoundException e){
+            this.connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
-
     }
+    public Connection getConnection(){return connection;}
+
+
+
 
 
 
