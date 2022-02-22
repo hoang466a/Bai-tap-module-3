@@ -14,6 +14,6 @@ public interface ICustomerImpl {
 
     public boolean deleteCustomer(int id) throws SQLException;
 
-    public List<Customer> showAllCustomer();
+    public List<Customer> showAllCustomer() throws SQLException;
 
 }

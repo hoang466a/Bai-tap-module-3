@@ -3,27 +3,43 @@ package model;
 public class Customer {
     private int idCustomer;
     private int typeIdCustomer;
-    private String nameSustomer;
+    private String nameCustomer;
     private String birthdayCustomer;
     private boolean genderCustomer;
     private String idCardCustomer;
     private String phoneCustomer;
     private String emailCustomer;
     private String addressCustomer;
+    private String typeNameCustomer;
+
+
 
     public Customer() {
     }
 
-    public Customer(int idCustomer, int typeIdCustomer, String nameSustomer, String birthdayCustomer, boolean genderCustomer, String idCardCustomer, String phoneCustomer, String emailCustomer, String addressCustomer) {
+    public Customer(int idCustomer, int typeIdCustomer, String nameCustomer, String birthdayCustomer, boolean genderCustomer, String idCardCustomer, String phoneCustomer, String emailCustomer, String addressCustomer) {
         this.idCustomer = idCustomer;
         this.typeIdCustomer = typeIdCustomer;
-        this.nameSustomer = nameSustomer;
+        this.nameCustomer = nameCustomer;
         this.birthdayCustomer = birthdayCustomer;
         this.genderCustomer = genderCustomer;
         this.idCardCustomer = idCardCustomer;
         this.phoneCustomer = phoneCustomer;
         this.emailCustomer = emailCustomer;
         this.addressCustomer = addressCustomer;
+    }
+
+    public Customer(int idCustomer, int typeIdCustomer, String nameCustomer, String birthdayCustomer, boolean genderCustomer, String idCardCustomer, String phoneCustomer, String emailCustomer, String addressCustomer, String typeNameCustomer) {
+        this.idCustomer = idCustomer;
+        this.typeIdCustomer = typeIdCustomer;
+        this.nameCustomer = nameCustomer;
+        this.birthdayCustomer = birthdayCustomer;
+        this.genderCustomer = genderCustomer;
+        this.idCardCustomer = idCardCustomer;
+        this.phoneCustomer = phoneCustomer;
+        this.emailCustomer = emailCustomer;
+        this.addressCustomer = addressCustomer;
+        this.typeNameCustomer = typeNameCustomer;
     }
 
     public int getIdCustomer() {
@@ -42,12 +58,12 @@ public class Customer {
         this.typeIdCustomer = typeIdCustomer;
     }
 
-    public String getNameSustomer() {
-        return nameSustomer;
+    public String getNameCustomer() {
+        return nameCustomer;
     }
 
-    public void setNameSustomer(String nameSustomer) {
-        this.nameSustomer = nameSustomer;
+    public void setNameCustomer(String nameCustomer) {
+        this.nameCustomer = nameCustomer;
     }
 
     public String getBirthdayCustomer() {
@@ -96,5 +112,13 @@ public class Customer {
 
     public void setAddressCustomer(String addressCustomer) {
         this.addressCustomer = addressCustomer;
+    }
+
+    public String getTypeNameCustomer() {
+        return typeNameCustomer;
+    }
+
+    public void setTypeNameCustomer(String typeNameCustomer) {
+        this.typeNameCustomer = typeNameCustomer;
     }
 }
