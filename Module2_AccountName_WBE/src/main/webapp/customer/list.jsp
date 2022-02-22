@@ -16,7 +16,7 @@
 <center>
     <h1>Customer Management</h1>
     <h2>
-        <a href="/users?action=create">Add New Customer</a>
+        <a href="/customers?action=create">Add New Customer</a>
     </h2>
 </center>
 <div align="center">
@@ -47,8 +47,8 @@
                 <td><c:out value="${customer.addressCustomer}"/></td>
                 <td><c:out value="${customer.typeNameCustomer}"/></td>
                 <td>
-                    <a href="/users?action=edit&id=${customer.idCustomer}">Edit</a>
-                    <a href="/users?action=delete&id=${customer.idCustomer}">Delete</a>
+                    <a href="/customers?action=edit&id=${customer.idCustomer}">Edit</a>
+                    <a href="/customers ?action=delete&id=${customer.idCustomer}">Delete</a>
                 </td>
             </tr>
         </c:forEach>

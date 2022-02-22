@@ -2,6 +2,7 @@ package controller;
 
 import model.Customer;
 import repository.customer_repo.CustomerImpl;
+import service.CustomerServiceImpl;
 
 
 import javax.servlet.*;
@@ -13,7 +14,7 @@ import java.util.List;
 
 @WebServlet(name = "CustomerServlet", value = "/customers")
 public class CustomerServlet extends HttpServlet {
-    private CustomerImpl customerImpl=new CustomerImpl();
+    private CustomerServiceImpl customerService=new CustomerServiceImpl();
 
     //public void init() {
         //customerImpl = new CustomerImpl();
@@ -22,7 +23,7 @@ public class CustomerServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         {
-            System.out.println(123);
+
             String action = request.getParameter("action");
             if (action == null) {
                 action = "";
@@ -30,13 +31,13 @@ public class CustomerServlet extends HttpServlet {
 
             switch (action) {
                 case "create":
-                    //showNewForm(request, response);
+                    showNewForm(request, response);
                     break;
                 case "edit":
-                    // showEditForm(request, response);
+                    showEditForm(request, response);
                     break;
                 case "delete":
-                    // deleteUser(request, response);
+                    deleteUser(request, response);
                     break;
                 default:
                     listCustomer(request, response);
@@ -44,6 +45,19 @@ public class CustomerServlet extends HttpServlet {
             }
         }
     }
+
+    private void deleteUser(HttpServletRequest request, HttpServletResponse response) {
+    }
+
+    private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
+
+    }
+
+    private void showNewForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        RequestDispatcher dispatcher=request.getRequestDispatcher("customer/create.jsp");
+        dispatcher.forward(request,response);
+    }
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         {
             String action = request.getParameter("action");
@@ -53,13 +67,13 @@ public class CustomerServlet extends HttpServlet {
 
             switch (action) {
                 case "create":
-                    // showNewForm(request, response);
+                    insertCustomer(request, response);
                     break;
                 case "edit":
-                    // showEditForm(request, response);
+                    editCustomer(request, response);
                     break;
                 case "delete":
-                    // deleteUser(request, response);
+                    deleteCustomer(request, response);
                     break;
                 default:
                   listCustomer(request,response);
@@ -69,9 +83,31 @@ public class CustomerServlet extends HttpServlet {
         }
     }
 
+    private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) {
+    }
+
+    private void editCustomer(HttpServletRequest request, HttpServletResponse response) {
+
+    }
+
+    private void insertCustomer(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int typeid=Integer.parseInt(request.getParameter("typeid"));
+        String name=request.getParameter("name");
+        String birthday=request.getParameter("birthday");
+        Boolean gender=Boolean.valueOf(request.getParameter("gender"));
+        String idcard=request.getParameter("idcard");
+        String phone=request.getParameter("phone");
+        String email=request.getParameter("email");
+        String address=request.getParameter("address");
+        Customer customer=new Customer(typeid,name,birthday,gender,idcard,phone,email,address);
+        customerService.create(customer);
+        RequestDispatcher dispatcher=request.getRequestDispatcher("customer/create.jsp");
+        request.setAttribute("massage","New Customer was created");
+        dispatcher.forward(request,response);
+    }
+
     private void listCustomer(HttpServletRequest request, HttpServletResponse response) {
-        System.out.println(123);
-        List<Customer> customerList=customerImpl.showAllCustomer();
+        List<Customer> customerList=customerService.showAll();
         request.setAttribute("customerList",customerList);
         RequestDispatcher dispatcher = request.getRequestDispatcher("customer/list.jsp");
         try {

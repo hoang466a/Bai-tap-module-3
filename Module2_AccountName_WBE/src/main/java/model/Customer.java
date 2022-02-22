@@ -17,6 +17,17 @@ public class Customer {
     public Customer() {
     }
 
+    public Customer(int typeIdCustomer, String nameCustomer, String birthdayCustomer, boolean genderCustomer, String idCardCustomer, String phoneCustomer, String emailCustomer, String addressCustomer) {
+        this.typeIdCustomer = typeIdCustomer;
+        this.nameCustomer = nameCustomer;
+        this.birthdayCustomer = birthdayCustomer;
+        this.genderCustomer = genderCustomer;
+        this.idCardCustomer = idCardCustomer;
+        this.phoneCustomer = phoneCustomer;
+        this.emailCustomer = emailCustomer;
+        this.addressCustomer = addressCustomer;
+    }
+
     public Customer(int idCustomer, int typeIdCustomer, String nameCustomer, String birthdayCustomer, boolean genderCustomer, String idCardCustomer, String phoneCustomer, String emailCustomer, String addressCustomer) {
         this.idCustomer = idCustomer;
         this.typeIdCustomer = typeIdCustomer;
@@ -74,7 +85,7 @@ public class Customer {
         this.birthdayCustomer = birthdayCustomer;
     }
 
-    public boolean isGenderCustomer() {
+    public boolean getGenderCustomer() {
         return genderCustomer;
     }
 

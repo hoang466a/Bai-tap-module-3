@@ -35,11 +35,35 @@ public class CustomerImpl implements ICustomerImpl {
 
     @Override
     public void insertCustomer(Customer customer) throws SQLException {
-
+        PreparedStatement preparedStatement=this.connectDB.getConnection().prepareStatement("insert into customer(customer_type_id,customer_name,customer_birthday,customer_gender,customer_id_card,customer_phone,customer_email,customer_address)values(?,?,?,?,?,?,?,?)");
+            preparedStatement.setInt(1,customer.getTypeIdCustomer());
+            preparedStatement.setString(2,customer.getNameCustomer());
+            preparedStatement.setString(3,customer.getBirthdayCustomer());
+            preparedStatement.setBoolean(4,customer.getGenderCustomer());
+            preparedStatement.setString(5,customer.getIdCardCustomer());
+            preparedStatement.setString(6,customer.getPhoneCustomer());
+            preparedStatement.setString(7,customer.getEmailCustomer());
+            preparedStatement.setString(8,customer.getAddressCustomer());
+            preparedStatement.executeUpdate();
     }
 
     @Override
-    public Customer findById(int id) {
+    public Customer findById(int id) throws SQLException {
+        Customer customer=null;
+        PreparedStatement preparedStatement=this.connectDB.getConnection().prepareStatement("select customer_id,customer_type_id,customer_name,customer_birthday,customer_gender,customer_id_card,customer_phone,customer_email,customer_address from customer where customer_id=?");
+        ResultSet resultSet=preparedStatement.executeQuery();
+        while(resultSet.next())
+        {
+            int customerId=resultSet.getInt("customer_id");
+            int customerTypeId=resultSet.getInt("customer_type_id");
+            String customerName=resultSet.getString("customer_name");
+            String customerBirthday=resultSet.getString("customer_birthday");
+            Boolean customerGender=resultSet.getBoolean("customer_id");
+            int customerTypeId=resultSet.getInt("customer_type_id");
+            int customerId=resultSet.getInt("customer_id");
+            int customerTypeId=resultSet.getInt("customer_type_id");
+            int customerTypeId=resultSet.getInt("customer_type_id");
+        }
         return null;
     }
 
