@@ -98,10 +98,10 @@ public class CustomerServlet extends HttpServlet {
         }
         else{
             request.setAttribute("customer",customer);
-            dispatcher=request.getRequestDispatcher("customer/edit.jsp");
+
         }
         try {
-            dispatcher.forward(request,response);
+            request.getRequestDispatcher("customer/edit.jsp").forward(request,response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -150,29 +150,28 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void editCustomer(HttpServletRequest request, HttpServletResponse response) {
-        int id=Integer.parseInt(request.getParameter("id"));
+
         String code=request.getParameter("code");
-        int typeid=Integer.parseInt(request.getParameter("typeid"));
+        int typeid=Integer.parseInt(request.getParameter("idtypecustomer"));
         String name=request.getParameter("name");
         String birthday=request.getParameter("birthday");
-        Boolean gender=Boolean.valueOf(request.getParameter("gender"));
+        Boolean gender=Boolean.parseBoolean(request.getParameter("gender"));
         String idcard=request.getParameter("idcard");
         String phone=request.getParameter("phone");
         String email=request.getParameter("email");
         String address=request.getParameter("address");
         Customer customer=new Customer(code,typeid,name,birthday,gender,idcard,phone,email,address);
 
-        customerService.edit(id,customer);
+        customerService.edit(customer);
         RequestDispatcher requestDispatcher=request.getRequestDispatcher("customer/edit.jsp");
         if(customer==null){
             requestDispatcher= request.getRequestDispatcher("error-404.jsp");
         }else{
             request.setAttribute("customer",customer);
-            request.setAttribute("massege","Customer was update");
-            requestDispatcher=request.getRequestDispatcher("customer/listCustomer.jsp");
+            requestDispatcher=request.getRequestDispatcher("customer/list.jsp");
         }
         try {
-            response.sendRedirect("/customer");
+            response.sendRedirect("/customers");
         } catch (IOException e) {
             e.printStackTrace();
         }

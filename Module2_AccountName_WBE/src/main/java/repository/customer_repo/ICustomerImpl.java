@@ -10,7 +10,7 @@ public interface ICustomerImpl {
 
     public Customer findById(int id);
 
-    public void edit(int id,Customer customer);
+    public void edit(Customer customer);
 
     public void delete(int id);
 

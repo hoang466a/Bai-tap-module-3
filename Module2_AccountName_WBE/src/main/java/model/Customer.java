@@ -7,9 +7,6 @@ public class Customer {
     private String nameCustomer;
     private String birthdayCustomer;
     private boolean genderCustomer;
-
-
-
     private String idCardCustomer;
     private String phoneCustomer;
     private String emailCustomer;
@@ -133,5 +130,20 @@ public class Customer {
 
     public void setTypeNameCustomer(String typeNameCustomer) {
         this.typeNameCustomer = typeNameCustomer;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "codeCustomer='" + codeCustomer + '\'' +
+                ", typeIdCustomer=" + typeIdCustomer +
+                ", nameCustomer='" + nameCustomer + '\'' +
+                ", birthdayCustomer='" + birthdayCustomer + '\'' +
+                ", genderCustomer=" + genderCustomer +
+                ", idCardCustomer='" + idCardCustomer + '\'' +
+                ", phoneCustomer='" + phoneCustomer + '\'' +
+                ", emailCustomer='" + emailCustomer + '\'' +
+                ", addressCustomer='" + addressCustomer + '\'' +
+                '}';
     }
 }

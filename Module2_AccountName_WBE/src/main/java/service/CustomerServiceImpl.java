@@ -36,7 +36,8 @@ public class CustomerServiceImpl implements ICustomerServiceImpl {
     }
 
     @Override
-    public void edit(int id,Customer customer) {
-        customerimpl.edit(id,customer);
+    public void edit(Customer customer) {
+
+        customerimpl.edit(customer);
     }
 }
