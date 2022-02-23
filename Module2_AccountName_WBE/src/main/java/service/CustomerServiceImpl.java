@@ -12,25 +12,31 @@ public class CustomerServiceImpl implements ICustomerServiceImpl {
 
     @Override
     public List<Customer> showAll() {
-        return customerimpl.showAllCustomer();
+        return customerimpl.showAll();
+    }
+
+    @Override
+    public List<Customer> search(String name) {
+        return customerimpl.search(name);
     }
 
     @Override
     public void delete(int id) {
-
+    customerimpl.delete(id);
     }
 
     @Override
     public void create(Customer customer) {
-        try {
-            customerimpl.insertCustomer(customer);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+            customerimpl.create(customer);
     }
 
     @Override
-    public void edit(int id) {
+    public Customer findById(int id) {
+        return customerimpl.findById(id);
+    }
 
+    @Override
+    public void edit(int id,Customer customer) {
+        customerimpl.edit(id,customer);
     }
 }

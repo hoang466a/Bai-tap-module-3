@@ -31,6 +31,12 @@
                 <h2>Add New Customer</h2>
             </caption>
             <tr>
+                <th>Code Customer:</th>
+                <td>
+                    <input type="text" name="code" id="code" size="45"/>
+                </td>
+            </tr>
+            <tr>
                 <th>Type Id Customer:</th>
                 <td>
                     <input type="text" name="typeid" id="typeid" size="45"/>

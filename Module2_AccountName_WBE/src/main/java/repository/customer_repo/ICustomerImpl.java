@@ -6,14 +6,16 @@ import java.sql.SQLException;
 import java.util.List;
 
 public interface ICustomerImpl {
-    public void insertCustomer(Customer customer) throws SQLException;
+    public void create(Customer customer);
 
-    public Customer findById(int id) throws SQLException;
+    public Customer findById(int id);
 
-    public boolean editCustomer(Customer customer) throws SQLException;
+    public void edit(int id,Customer customer);
 
-    public boolean deleteCustomer(int id) throws SQLException;
+    public void delete(int id);
 
-    public List<Customer> showAllCustomer() throws SQLException;
+    public List<Customer> showAll();
+
+    public List<Customer> search(String name);
 
 }
