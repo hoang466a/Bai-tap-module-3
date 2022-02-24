@@ -9,23 +9,7 @@ import java.util.List;
 
 public class CustomerImpl implements ICustomerImpl {
     private ConnectDB connectDB = new ConnectDB();
-    /*private String jdbcURL="jdbc:mysql://localhost:3306/furama_data";
-    private String jdbcUsername="root";
-    private String jdbcPassword="000000";
 
-    private Connection connection;
-    CustomerImpl customerImpl=new CustomerImpl();
-
-
-    public CustomerImpl() {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            this.connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-    public Connection getConnection(){return connection;}*/
 
 
     @Override
@@ -80,9 +64,11 @@ public class CustomerImpl implements ICustomerImpl {
 
 
         try {
-            PreparedStatement preparedStatement = this.connectDB.getConnection().prepareStatement("update customer" +
-                    "set customer_code=?,customer_type_id=?,customer_name=?,customer_birthday=?,customer_gender=?," +
-                    "customer_id_card=?,customer_phone=?,customer_email=?,customer_address=? where customer_id=?");
+            PreparedStatement preparedStatement = this.connectDB.getConnection().prepareStatement("update customer set customer_code=?,customer_type_id=?,customer_name=?,customer_birthday=?,customer_gender=?,"+
+                   " customer_id_card=?,customer_phone=?,customer_email=?,customer_address=? where customer_id=?");
+//            PreparedStatement preparedStatement = this.connectDB.getConnection().prepareStatement("update customer" +
+//                    "set customer_code=?,customer_type_id=?,customer_name=?,customer_birthday=?,customer_gender=?," +
+//                    "customer_id_card=?,customer_phone=?,customer_email=?,customer_address=? where customer_id=?");
 
             preparedStatement.setString(1, customer.getCodeCustomer());
             preparedStatement.setInt(2, customer.getTypeIdCustomer());
