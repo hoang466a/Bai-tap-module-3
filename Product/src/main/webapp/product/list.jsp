@@ -1,53 +1,98 @@
 <%--
   Created by IntelliJ IDEA.
-  User: ADTOBIAS
-  Date: 24-Feb-22
-  Time: 9:33 AM
+  User: LinhDN
+  Date: 2/18/2022
+  Time: 2:40 PM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Product Management Application</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/bootstrap413/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/datatables/css/dataTables.bootstrap4.min.css">
 </head>
 <body>
-<center>
-    <h1>Product Management</h1>
-    <h2>
-        <a href="/products?action=create" style="float: left">Add New Product</a>
-    </h2>
-</center>
-<div align="center">
-    <table border="1" cellpadding="5">
-        <caption><h2>List of Products</h2></caption>
+<a class="btn btn-success" href="/products?action=create">Add new customer</a>
+<table id="product" class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Code</th>
+        <th scope="col">Name</th>
+        <th scope="col">Birthday</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Customer Type</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <c:forEach var="product" items="${productList}">
         <tr>
-            <th>ID Product</th>
-            <th>Name Product</th>
-            <th>Price Product</th>
-            <th>Quantity Product</th>
-            <th>Color Product</th>
-            <th>Description Product</th>
-            <th>Category Product</th>
+            <td >${product.idProduct}</td>
+            <td >${product.nameProduct}</td>
+            <td >${product.nameCustomer}</td>
+            <td >${product.birthday}</td>
+            <td >${product.gender ? 'Nam':'Nữ'}</td>
+            <td >${product.nameCustomerType}</td>
+            <td>
+                <button class="btn btn-warning">Edit</button>
+                <button onclick="deleteCustomer('${customer.idCustomer}','${customer.nameCustomer}')" type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteModal">
+                    Delete
+                </button>
+            </td>
         </tr>
-        <c:forEach var="product" items="${productList}">
-            <tr>
-                <td>${product.idProduct}</td>
-                <td>${product.nameProduct}</td>
-                <td>${product.priceProduct}</td>
-                <td>${product.quantityProduct}</td>
-                <td>${product.colorProduct}</td>
-                <td>${product.desProduct}</td>
-                <td>${product.cateProduct}</td>
+    </c:forEach>
+    </tbody>
+</table>
 
-                <td>
-                    <a href="/products?action=edit&id=${product.idProduct}">Edit</a>
-                    <a href="/products ?action=delete&id=${product.idProduct}">Delete</a>
-                </td>
-            </tr>
-        </c:forEach>
-    </table>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure delete <span class="text-danger" id="name-customer"></span> ?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button onclick="submitFormDelete()" type="button" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+<form hidden id="form-delete" method="post" action="/customer">
+    <input type="text" name="action" value="delete">
+    <input type="text" name="id" id="id-customer">
+</form>
+
+
+
+<script src="/static/jquery/jquery-3.5.1.min.js"></script>
+<script src="/static/bootstrap413/js/popper.min.js"></script>
+<script src="/static/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/static/datatables/js/dataTables.bootstrap4.min.js"></script>
+<script src="/static/bootstrap413/js/bootstrap.min.js"></script>
+<script src="/static/bootstrap413/js/bootstrap.bundle.js"></script>
+
+
+<script>
+    function deleteCustomer(id, name) {
+        document.getElementById("id-customer").value = id;
+        document.getElementById("name-customer").innerText = name;
+    }
+    function submitFormDelete() {
+        document.getElementById("form-delete").submit();
+    }
+</script>
 </body>
 </html>
